@@ -5,13 +5,13 @@ meta {
 }
 
 post {
-  url: http://localhost:8080/api/v1/files/upload
+  url: {{host}}/api/v1/files/upload
   body: multipartForm
   auth: inherit
 }
 
 body:multipart-form {
-  file: @file(/Users/zaharlitvincuk/Downloads/3-501.jpg)
+  file: @file(/Users/zaharlitvincuk/Downloads/maxim-berg-XTGTa3Ry6H4-unsplash.jpg)
 }
 
 body:file {
