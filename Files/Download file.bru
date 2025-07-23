@@ -1,0 +1,15 @@
+meta {
+  name: Download file
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/api/v1/files/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: D9F714E9-BEDE-45F9-BDA6-11792673D20C
+}

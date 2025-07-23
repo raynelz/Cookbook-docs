@@ -1,0 +1,19 @@
+meta {
+  name: Upload file
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/v1/files/upload
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  file: @file(/Users/zaharlitvincuk/Downloads/3-501.jpg)
+}
+
+body:file {
+  file: @file(/Users/zaharlitvincuk/Downloads/3-501.jpg) @contentType(image/jpeg)
+}

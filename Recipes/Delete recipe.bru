@@ -1,0 +1,15 @@
+meta {
+  name: Delete recipe
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:8080/api/v1/recipes/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: ED86FA13-2736-4F00-B399-36BC881ECEC1
+}
