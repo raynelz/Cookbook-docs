@@ -1,0 +1,19 @@
+meta {
+  name: Статистика пользователя
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/api/v1/stats/user/:vkUserId
+  body: none
+  auth: inherit
+}
+
+params:path {
+  vkUserId: 123456789
+}
+
+settings {
+  encodeUrl: true
+}

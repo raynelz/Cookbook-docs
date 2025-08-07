@@ -1,0 +1,21 @@
+meta {
+  name: Создать категорию
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/api/v1/categories
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Десерты"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

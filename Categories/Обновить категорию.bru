@@ -1,0 +1,26 @@
+meta {
+  name: Обновить категорию
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{host}}/api/v1/categories/:categoryID
+  body: json
+  auth: inherit
+}
+
+params:path {
+  categoryID: 
+}
+
+body:json {
+  {
+    "name": "Обновленное название",
+    "description": "Новое описание"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

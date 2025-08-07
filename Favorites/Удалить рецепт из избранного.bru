@@ -1,0 +1,23 @@
+meta {
+  name: Удалить рецепт из избранного
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{host}}/api/v1/favorites/:recipeId?vkUserId=123456789
+  body: none
+  auth: inherit
+}
+
+params:query {
+  vkUserId: 123456789
+}
+
+params:path {
+  recipeId: 
+}
+
+settings {
+  encodeUrl: true
+}

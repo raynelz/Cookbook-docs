@@ -1,0 +1,19 @@
+meta {
+  name: Получить избранные рецепты пользователя
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/api/v1/favorites?vkUserId=123456789
+  body: none
+  auth: inherit
+}
+
+params:query {
+  vkUserId: 123456789
+}
+
+settings {
+  encodeUrl: true
+}

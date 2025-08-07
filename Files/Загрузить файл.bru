@@ -1,5 +1,5 @@
 meta {
-  name: Upload file
+  name: Загрузить файл
   type: http
   seq: 4
 }
@@ -10,8 +10,12 @@ post {
   auth: inherit
 }
 
+body:form-urlencoded {
+  : 
+}
+
 body:multipart-form {
-  file: @file(/Users/zaharlitvincuk/Downloads/maxim-berg-XTGTa3Ry6H4-unsplash.jpg)
+  file: @file(/Users/zaharlitvincuk/Downloads/nn7ayr6tfbt55e1sbvwecebnc3vt4kxn.jpg)
 }
 
 body:file {

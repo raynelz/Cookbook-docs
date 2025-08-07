@@ -5,22 +5,18 @@ meta {
 }
 
 patch {
-  url: {{host}}/api/v1/recipes/:id
+  url: {{host}}/api/v1/recipes/:recipeId
   body: json
   auth: inherit
 }
 
 params:path {
-  id: 12BADF0A-AFCC-4FCD-83B0-BBB6ED003840
+  recipeId: 2840E4CB-DDCC-4AB9-837C-DF6AB6C687A1
 }
 
 body:json {
   {
-    "cover": "D9F714E9-BEDE-45F9-BDA6-11792673D20C",
-    "title": "Борщ",
-    "estimateTime": 3600,
-    "calories": 250.5,
-    "ingredients": "Свекла, капуста, морковь, лук",
-    "steps": "1. овощи 2. Варить 1 час"
+    "title": "Обновленное название",
+    "calories": 350.0
   }
 }

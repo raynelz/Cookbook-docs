@@ -1,0 +1,23 @@
+meta {
+  name: Проверить в избранном ли рецепт
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{host}}/api/v1/favorites/check/:recipeId?vkUserId=123456789
+  body: none
+  auth: inherit
+}
+
+params:query {
+  vkUserId: 123456789
+}
+
+params:path {
+  recipeId: 2840E4CB-DDCC-4AB9-837C-DF6AB6C687A1
+}
+
+settings {
+  encodeUrl: true
+}

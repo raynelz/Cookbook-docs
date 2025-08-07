@@ -1,15 +1,15 @@
 meta {
-  name: Delete file
+  name: Получить файл
   type: http
-  seq: 2
+  seq: 1
 }
 
-delete {
+get {
   url: {{host}}/api/v1/files/:id
   body: none
   auth: inherit
 }
 
 params:path {
-  id: 
+  id: F0C865E3-34BD-4EB2-8C89-7D7E9A72A4D0
 }

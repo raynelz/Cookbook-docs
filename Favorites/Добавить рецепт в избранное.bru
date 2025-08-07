@@ -1,0 +1,22 @@
+meta {
+  name: Добавить рецепт в избранное
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/api/v1/favorites
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "vkUserId": 123456789,
+    "recipeId": "2840E4CB-DDCC-4AB9-837C-DF6AB6C687A1"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
